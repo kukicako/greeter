@@ -1,14 +1,13 @@
-require('dotenv').config();
 
 const express = require('express');
 
-console.log('\nmessage:', process.env.MSG);
 
 const server = express();
 
 server.get('/', (req, res) => {
   res.status(200).json({ hello: 'my name is jeff' });
 });
+
 
 
 
