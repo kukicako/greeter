@@ -1,4 +1,8 @@
+require('dotenv').config();
+
 const express = require('express');
+
+console.log('\nmessage:', process.env.MSG);
 
 const server = express(); // creating an instance of an express server
 
